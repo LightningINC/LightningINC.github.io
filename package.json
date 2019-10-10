@@ -1,0 +1,48 @@
+{
+  "name": "personalwebsite",
+  "version": "1.0.0",
+  "description": "A personal website for ma",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "heroku-postbuild": "cross-env NODE_ENV=production webpack --config webpack-production.config.js -p",
+    "build": "webpack --config webpack.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }, 
+  "repository": {
+    "type": "git",
+    "url": "lightninginc.github.io"
+  },
+  "keywords": [
+    "software",
+    "engineer",
+    "software",
+    "developer",
+    "personal",
+    "web",
+    "page"
+  ],
+  "author": "Idowu Hayub Olatunji",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "@fortawesome/fontawesome-free": "^5.11.2",
+    "autoprefixer": "^9.6.4",
+    "babel-loader": "^8.0.6",
+    "cross-env": "^6.0.3",
+    "css-loader": "^3.2.0",
+    "cssnano": "^4.1.10",
+    "file-loader": "^4.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "postcss-loader": "^3.0.0",
+    "sass": "^1.23.0",
+    "sass-loader": "^8.0.0",
+    "strip-loader": "^0.1.2",
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
